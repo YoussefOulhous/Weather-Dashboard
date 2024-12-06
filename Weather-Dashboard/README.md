@@ -1,0 +1,7 @@
+# The Weather Dashboard is a responsive application that provides real-time weather information and a 5-day forecast for any city. Using the OpenWeatherMap API, users can search for a city's weather to view current conditions such as temperature, humidity, wind speed, and more. The dashboard is designed to be user-friendly and works seamlessly across desktop and mobile devices.
+
+_This project is built using HTML5 for structure, CSS3 for styling and layout, and JavaScript (ES6) for functionality and API integration. To get started, clone the repository, open the project folder, and launch index.html in your browser. You will need to sign up on OpenWeatherMap to obtain an API key, which should be added to the script.js file in place of the placeholder  http://api.weatherapi.com/v1 .
+
+The development process was structured over two weeks. The first week focused on setting up the project, designing the layout, and integrating the API for current weather data. The second week included adding the 5-day forecast, making the design responsive, and deploying the final project.
+
+Future improvements could include features such as saving favorite cities, a dark/light mode toggle, and localized weather alerts. This project is open-source and licensed under the MIT License.

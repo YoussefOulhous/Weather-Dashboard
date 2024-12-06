@@ -1,0 +1,30 @@
+# Node.js and npm
+node_modules/
+package-lock.json
+
+# Build and dist directories
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# React and framework-related files
+.DS_Store
+.vscode/
+.idea/
+*.iml
+
+# Tailwind CSS (if using JIT mode, cache)
+*.cache/
+tailwind.config.js.backup
+
+# Log files
+*.log
+
+# System files
+Thumbs.db
