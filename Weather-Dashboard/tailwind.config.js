@@ -6,5 +6,6 @@ export default {
     
   },
   plugins: [],
+  lightMode:'class'
 }
 

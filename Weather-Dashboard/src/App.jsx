@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from './components/Header'
+import Header from './components/SearchBar'
 import axios, { Axios } from 'axios'
 import WeatherCard from './components/WeatherCard';
 
@@ -28,16 +28,21 @@ function App() {
       setweatherData(response.data);
     }
     catch(error){
-      seterror("Failed to fetch weather data. Please check the city name or try again later.")
+      seterror("Failed to fetch weather data. Please check the city name or try again later!")
     }
 
     console.log(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
+
+    useEffect(() => {
+      const interval = setInterval(refreshData, 60000);
+      return () => clearInterval(interval);
+    }, []);
 
   }
 
 
   return (
-    <div className='bg-gradient-to-b from-[#020024] to-[#090979] h-screen'>
+    <div className='bg-[#0F172A] h-screen sm:bg-[#0F172A] '>
       <Header setcity={setcity} fetchingWeatherData={fetchingWeatherData} city={city} />
       <WeatherCard  weatherData={weatherData} error={error} city={city} localTime={localTime}/>
 
